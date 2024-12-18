@@ -1,0 +1,18 @@
+DECLARE arrayData : INTEGER
+arrayData <-- [10,5,6,7,1,12,13,15,21,8]
+
+FOR COUNT = 1 TO 9
+  FOR COUNTER = 1 TO 9
+    IF arrayData[COUNTER] < arrayData[COUNTER+1]
+      THEN temp =  arrayData[COUNTER+1]
+           arrayData[COUNTER+1] = arrayData[COUNTER]
+           arrayData[COUNTER] = temp
+    ENDIF
+  NEXT
+NEXT
+
+
+
+
+
+
